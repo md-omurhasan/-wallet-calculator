@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Volt </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('/images/bank.jpg')] bg-center bg-cover ">
+    <header>
+        <div class="container mx-auto text-center px-4 py-14">
+            <h1 class="text-7xl text-center pt-16 mx-auto font-bold">Your P<span class="text-yellow-400">e</span>rs<span
+                    class="text-rose-400">o</span>n<span class="text-blue-400">a</span>l <span class="text-rose-600">
+                    Wallet Balance</span>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container mx-auto  mt-24">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="div text-white bg-rose-400 p-8  rounded-md ">
+                        <h1 class="font-semibold text-2xl pl-4">Deposit</h1>
+                        <h4 class="font-semibold text-5xl pl-4">$<span id="deposit-text">00</span></h4>
+                    </div>
+                    <div class="div text-white bg-yellow-400 p-8  rounded-md ">
+                        <h1 class="font-semibold text-2xl pl-4">Withdraw</h1>
+                        <h4 class="font-semibold text-5xl pl-4">$<span id="withdraw-text">00</span></h4>
+                    </div>
+
+                    <div class="div text-white bg-blue-400 p-8  rounded-md ">
+                        <h1 class="font-semibold text-2xl pl-4">Balance</h1>
+                        <h4 class="font-semibold text-5xl pl-4">$<span id="balance-text">00</span></h4>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container  mx-auto  mt-24">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="div text-white bg-green-400 p-8  rounded-md ">
+                        <h1 class="font-semibold text-2xl mb-4 ">Please Deposit Here </h1>
+                        <input  class="block py-2 text-black w-8/12" type="text" name="" id="deposit-input" placeholder="please enter deposit amount ">
+                        <button id="btn-deposit" class=" font-medium py-3 px-4 mt-4 text-white bg-rose-600">Deposit </button>
+                   
+                    </div>
+                    <div class="div text-white bg-purple-400 p-8  rounded-md ">
+                        <h1 class="font-semibold text-2xl mb-4 "> Please Withdraw Here </h1>
+                        <input class="block py-2 text-black w-8/12"  type="text" name="" id="withdraw" placeholder="please enter withdraw amount ">
+                        <button id="btn-withdraw" class=" font-medium py-3 px-4 mt-4  text-white bg-rose-600">withdraw</button>
+                    </div>
+
+                 
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+ <script src="js/withdraw.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+
+</html>
